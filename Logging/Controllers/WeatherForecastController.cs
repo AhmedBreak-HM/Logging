@@ -26,6 +26,25 @@ namespace Logging.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("Starting Get Oprations");
+            _logger.LogDebug("Starting Get Oprations Debug");
+
+            try
+            {
+                throw new Exception("my custom exception");
+            }
+            catch (Exception exp)
+            {
+
+                // _logger.LogError(exp, "Error occured");
+            }
+
+            finally
+            {
+                _logger.LogInformation("finally Try Catch");
+            }
+
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -34,6 +53,7 @@ namespace Logging.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+
         }
     }
 }
