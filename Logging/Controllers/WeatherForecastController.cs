@@ -59,7 +59,7 @@ namespace Logging.Controllers
         [HttpPost("Create")]
         public ActionResult<WeatherForecast> Create(WeatherForecast weather)
         {
-
+            _logger.LogInformation("We Received {@weather}", weather);
             return weather;
         }
     }
