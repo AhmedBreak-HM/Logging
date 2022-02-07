@@ -55,5 +55,12 @@ namespace Logging.Controllers
             .ToArray();
 
         }
+
+        [HttpPost("Create")]
+        public ActionResult<WeatherForecast> Create(WeatherForecast weather)
+        {
+
+            return weather;
+        }
     }
 }
