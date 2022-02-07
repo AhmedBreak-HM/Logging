@@ -17,11 +17,11 @@ namespace Logging
         public static int Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
-               .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-               .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
-               .Enrich.FromLogContext()
+               //.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+               //.MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
+               //.Enrich.FromLogContext()
                .WriteTo.Console()
-               .WriteTo.File(new RenderedCompactJsonFormatter(), "wwwroot/log.json")
+               //.WriteTo.File(new RenderedCompactJsonFormatter(), "wwwroot/log.json")
                .CreateLogger();
             try
             {
@@ -43,7 +43,10 @@ namespace Logging
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .UseSerilog() // <-- Add this line
+                // <-- Add this line
+                .UseSerilog((context, services, configuration) => configuration
+                    .ReadFrom.Configuration(context.Configuration)
+                    .ReadFrom.Services(services))
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

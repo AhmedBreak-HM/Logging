@@ -1,15 +1,73 @@
-{"@t":"2022-02-07T21:07:36.1710887Z","@m":"Starting web host","@i":"4872fd06"}
-{"@t":"2022-02-07T21:07:38.3206730Z","@m":"Now listening on: \"https://localhost:5001\"","@i":"d826f4b8","address":"https://localhost:5001","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2022-02-07T21:07:39.6250227Z","@m":"Application started. Press Ctrl+C to shut down.","@i":"dcaefe54","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2022-02-07T21:07:43.8405882Z","@m":"HTTP \"GET\" \"/swagger/index.html\" responded 200 in 827.2177 ms","@i":"62d0885c","RequestMethod":"GET","RequestPath":"/swagger/index.html","StatusCode":200,"Elapsed":827.2177,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HMFAFNFIE8TJ:0000000F","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:45.4332476Z","@m":"Hosting environment: \"Development\"","@i":"c3307c92","envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2022-02-07T21:07:46.7334196Z","@m":"Content root path: \"F:\\projctBreak\\projctes2020\\Source\\Repos\\Logging\\Logging\"","@i":"b5d60022","contentRoot":"F:\\projctBreak\\projctes2020\\Source\\Repos\\Logging\\Logging","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2022-02-07T21:07:46.8564370Z","@m":"HTTP \"GET\" \"/swagger/favicon-16x16.png\" responded 200 in 165.5961 ms","@i":"62d0885c","RequestMethod":"GET","RequestPath":"/swagger/favicon-16x16.png","StatusCode":200,"Elapsed":165.5961,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HMFAFNFIE8TJ:00000013","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:47.6090605Z","@m":"HTTP \"GET\" \"/swagger/v1/swagger.json\" responded 200 in 475.9903 ms","@i":"62d0885c","RequestMethod":"GET","RequestPath":"/swagger/v1/swagger.json","StatusCode":200,"Elapsed":475.9903,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HMFAFNFIE8TJ:00000015","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:54.0337291Z","@m":"Starting Get Oprations","@i":"f89313ea","SourceContext":"Logging.Controllers.WeatherForecastController","ActionId":"28f4ecc9-fab9-4844-ac8e-3915a587ce98","ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","RequestId":"0HMFAFNFIE8TJ:00000017","RequestPath":"/WeatherForecast","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:54.0741274Z","@m":"finally Try Catch","@i":"e0f6ec3a","SourceContext":"Logging.Controllers.WeatherForecastController","ActionId":"28f4ecc9-fab9-4844-ac8e-3915a587ce98","ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","RequestId":"0HMFAFNFIE8TJ:00000017","RequestPath":"/WeatherForecast","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:54.1690880Z","@m":"HTTP \"GET\" \"/WeatherForecast\" responded 200 in 474.3189 ms","@i":"62d0885c","RequestMethod":"GET","RequestPath":"/WeatherForecast","StatusCode":200,"Elapsed":474.3189,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HMFAFNFIE8TJ:00000017","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:56.2075943Z","@m":"Starting Get Oprations","@i":"f89313ea","SourceContext":"Logging.Controllers.WeatherForecastController","ActionId":"28f4ecc9-fab9-4844-ac8e-3915a587ce98","ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","RequestId":"0HMFAFNFIE8TJ:00000019","RequestPath":"/WeatherForecast","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:56.2978304Z","@m":"finally Try Catch","@i":"e0f6ec3a","SourceContext":"Logging.Controllers.WeatherForecastController","ActionId":"28f4ecc9-fab9-4844-ac8e-3915a587ce98","ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","RequestId":"0HMFAFNFIE8TJ:00000019","RequestPath":"/WeatherForecast","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:07:56.3005804Z","@m":"HTTP \"GET\" \"/WeatherForecast\" responded 200 in 93.6269 ms","@i":"62d0885c","RequestMethod":"GET","RequestPath":"/WeatherForecast","StatusCode":200,"Elapsed":93.6269,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HMFAFNFIE8TJ:00000019","ConnectionId":"0HMFAFNFIE8TJ"}
-{"@t":"2022-02-07T21:08:13.1262424Z","@m":"Application is shutting down...","@i":"90f52c38","SourceContext":"Microsoft.Hosting.Lifetime"}
+{
+  "@t": "2022-02-07T21:14:06.3152189Z",
+  "@mt": "Now listening on: {address}",
+  "address": "https://localhost:5001",
+  "SourceContext": "Microsoft.Hosting.Lifetime"
+} {
+  "@t": "2022-02-07T21:14:06.6169617Z",
+  "@mt": "Application started. Press Ctrl+C to shut down.",
+  "SourceContext": "Microsoft.Hosting.Lifetime"
+} {
+  "@t": "2022-02-07T21:14:07.9354928Z",
+  "@mt": "Hosting environment: {envName}",
+  "envName": "Development",
+  "SourceContext": "Microsoft.Hosting.Lifetime"
+} {
+  "@t": "2022-02-07T21:14:11.7999643Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+  "@r": [ "959.7959" ],
+  "RequestMethod": "GET",
+  "RequestPath": "/swagger/index.html",
+  "StatusCode": 200,
+  "Elapsed": 959.7959,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "RequestId": "0HMFAFR37TJ25:0000000F",
+  "ConnectionId": "0HMFAFR37TJ25"
+} {
+  "@t": "2022-02-07T21:14:15.3647509Z",
+  "@mt": "Content root path: {contentRoot}",
+  "contentRoot": "F:\\projctBreak\\projctes2020\\Source\\Repos\\Logging\\Logging",
+  "SourceContext": "Microsoft.Hosting.Lifetime"
+} {
+  "@t": "2022-02-07T21:14:16.3576000Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+  "@r": [ "391.8359" ],
+  "RequestMethod": "GET",
+  "RequestPath": "/swagger/v1/swagger.json",
+  "StatusCode": 200,
+  "Elapsed": 391.8359,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "RequestId": "0HMFAFR37TJ25:00000013",
+  "ConnectionId": "0HMFAFR37TJ25"
+} {
+  "@t": "2022-02-07T21:14:25.5297208Z",
+  "@mt": "We Received {@weather}",
+  "weather": {
+    "Date": "2022-02-07T21:14:21.5220000Z",
+    "TemperatureC": 0,
+    "TemperatureF": 32,
+    "Summary": "string",
+    "$type": "WeatherForecast"
+  },
+  "SourceContext": "Logging.Controllers.WeatherForecastController",
+  "ActionId": "570be69c-5f14-4040-8b6d-896a85f1f286",
+  "ActionName": "Logging.Controllers.WeatherForecastController.Create (Logging)",
+  "RequestId": "0HMFAFR37TJ25:00000015",
+  "RequestPath": "/WeatherForecast/Create",
+  "ConnectionId": "0HMFAFR37TJ25"
+} {
+  "@t": "2022-02-07T21:14:25.8897039Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+  "@r": [ "938.7517" ],
+  "RequestMethod": "POST",
+  "RequestPath": "/WeatherForecast/Create",
+  "StatusCode": 200,
+  "Elapsed": 938.7517,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "RequestId": "0HMFAFR37TJ25:00000015",
+  "ConnectionId": "0HMFAFR37TJ25"
+} {
+  "@t": "2022-02-07T21:14:33.7429285Z",
+  "@mt": "Application is shutting down...",
+  "SourceContext": "Microsoft.Hosting.Lifetime"
+}
